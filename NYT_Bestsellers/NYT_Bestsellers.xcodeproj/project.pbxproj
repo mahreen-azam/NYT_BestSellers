@@ -12,6 +12,7 @@
 		BA96DEE628984BE000FCF355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA96DEE528984BE000FCF355 /* Assets.xcassets */; };
 		BA96DEE928984BE000FCF355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA96DEE828984BE000FCF355 /* Preview Assets.xcassets */; };
 		BA96DEF02898503C00FCF355 /* BookInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96DEEF2898503C00FCF355 /* BookInfoCard.swift */; };
+		BA96DEF228986F3900FCF355 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96DEF128986F3900FCF355 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		BA96DEE528984BE000FCF355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA96DEE828984BE000FCF355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA96DEEF2898503C00FCF355 /* BookInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoCard.swift; sourceTree = "<group>"; };
+		BA96DEF128986F3900FCF355 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				BA96DEE128984BDD00FCF355 /* NYT_BestsellersApp.swift */,
 				BA96DEE328984BDD00FCF355 /* BestSellersView.swift */,
+				BA96DEF128986F3900FCF355 /* BookDetailView.swift */,
 				BA96DEEF2898503C00FCF355 /* BookInfoCard.swift */,
 				BA96DEE528984BE000FCF355 /* Assets.xcassets */,
 				BA96DEE728984BE000FCF355 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA96DEF228986F3900FCF355 /* BookDetailView.swift in Sources */,
 				BA96DEF02898503C00FCF355 /* BookInfoCard.swift in Sources */,
 				BA96DEE428984BDD00FCF355 /* BestSellersView.swift in Sources */,
 				BA96DEE228984BDD00FCF355 /* NYT_BestsellersApp.swift in Sources */,
