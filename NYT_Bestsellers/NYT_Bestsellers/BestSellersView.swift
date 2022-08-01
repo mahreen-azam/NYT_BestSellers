@@ -7,21 +7,22 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BestSellersView: View {
     var body: some View {
         Text("NYT Bestsellers for Today")
+            .bold()
             .padding()
         ScrollView {
             VStack {
-                
+                BookInfoCard()
             }
         }
 
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct BestSellersView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BestSellersView()
     }
 }

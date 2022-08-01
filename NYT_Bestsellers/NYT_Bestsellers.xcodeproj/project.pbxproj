@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA96DEE228984BDD00FCF355 /* NYT_BestsellersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96DEE128984BDD00FCF355 /* NYT_BestsellersApp.swift */; };
-		BA96DEE428984BDD00FCF355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96DEE328984BDD00FCF355 /* ContentView.swift */; };
+		BA96DEE428984BDD00FCF355 /* BestSellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96DEE328984BDD00FCF355 /* BestSellersView.swift */; };
 		BA96DEE628984BE000FCF355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA96DEE528984BE000FCF355 /* Assets.xcassets */; };
 		BA96DEE928984BE000FCF355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA96DEE828984BE000FCF355 /* Preview Assets.xcassets */; };
 		BA96DEF02898503C00FCF355 /* BookInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96DEEF2898503C00FCF355 /* BookInfoCard.swift */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		BA96DEDE28984BDD00FCF355 /* NYT_Bestsellers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYT_Bestsellers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA96DEE128984BDD00FCF355 /* NYT_BestsellersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYT_BestsellersApp.swift; sourceTree = "<group>"; };
-		BA96DEE328984BDD00FCF355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA96DEE328984BDD00FCF355 /* BestSellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersView.swift; sourceTree = "<group>"; };
 		BA96DEE528984BE000FCF355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA96DEE828984BE000FCF355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA96DEEF2898503C00FCF355 /* BookInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoCard.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				BA96DEE128984BDD00FCF355 /* NYT_BestsellersApp.swift */,
-				BA96DEE328984BDD00FCF355 /* ContentView.swift */,
+				BA96DEE328984BDD00FCF355 /* BestSellersView.swift */,
 				BA96DEEF2898503C00FCF355 /* BookInfoCard.swift */,
 				BA96DEE528984BE000FCF355 /* Assets.xcassets */,
 				BA96DEE728984BE000FCF355 /* Preview Content */,
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA96DEF02898503C00FCF355 /* BookInfoCard.swift in Sources */,
-				BA96DEE428984BDD00FCF355 /* ContentView.swift in Sources */,
+				BA96DEE428984BDD00FCF355 /* BestSellersView.swift in Sources */,
 				BA96DEE228984BDD00FCF355 /* NYT_BestsellersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
