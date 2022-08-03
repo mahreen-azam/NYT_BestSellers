@@ -9,53 +9,56 @@ import SwiftUI
 
 struct BookDetailView: View {
     var body: some View {
-        VStack {
-            Image("TSwift-Speak-Now")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 300)
-                .cornerRadius(10)
-            HStack {
-                Text("Author: ")
-                    .font(.headline)
-                Text("Author Value")
-                    .font(.subheadline)
-                Spacer()
-            }.padding(.bottom)
-            HStack {
-                Text("Summary: ")
-                    .font(.headline)
-                Text("Summary Value")
-                    .font(.subheadline)
-                Spacer()
-            }.padding(.bottom)
-            HStack {
-                Text("Description: ")
-                    .font(.headline)
-                Spacer()
-            }
-            ScrollView {
+            VStack {
+                Image("TSwift-Speak-Now")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 300, height: 300)
+                    .cornerRadius(10)
                 HStack {
-                    Text("""
-                        Description Value
-                        dfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfdsfsdfsdfsdfsdfsdfdsffsdfsd
-                        
-                        
-                        dfsdf
-                        
-                        vsvslwsdw
-                        vvmddspvsmvsdvsmdv
-                        
-                        dvsdmvlskdmvsdklvmsdvsdmvsdv
-                        msvsdlmvdmvsmvsdmsmdv
-                        mvsdv;dsvdsvmdsvsdvsdlvdsmvsdlmvsdvsd
-                        vsmvsd
-                        """)
+                    Text("Author: ")
+                        .font(.headline)
+                    Text("Author Value")
                         .font(.subheadline)
-                }.padding(.bottom)
+                    Spacer()
+                }
+                HStack {
+                    Text("Published: ")
+                        .font(.headline)
+                    Text("Published Date")
+                        .font(.subheadline)
+                    Spacer()
+                }
+                HStack {
+                    Text("Description: ")
+                        .font(.headline)
+                    Spacer()
+                }
+                ScrollView {
+                    HStack {
+                        Text("""
+                                Description Value
+                                dfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfdsfsdfsdfsdfsdfsdfdsffsdfsd
+                                
+                                
+                                dfsdf
+                                
+                                vsvslwsdw
+                                vvmddspvsmvsdvsmdv
+                                
+                                dvsdmvlskdmvsdklvmsdvsdmvsdv
+                                msvsdlmvdmvsmvsdmsmdv
+                                mvsdv;dsvdsvmdsvsdvsdlvdsmvsdlmvsdvsd
+                                vsmvsd
+                                """)
+                        .font(.subheadline)
+                        Spacer()
+                    }.padding(.bottom)
+                }
                 Spacer()
-            }
-        }.padding()
+            }.padding()
+            .navigationTitle("Book Detail")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -64,8 +67,3 @@ struct BookDetailView_Preview: PreviewProvider {
         BookDetailView()
     }
 }
-
-
-// TO DO:
-// Add Vstack/Hstack in places that should be together
-// Integrate API

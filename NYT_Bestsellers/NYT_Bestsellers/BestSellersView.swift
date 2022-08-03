@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct BestSellersView: View {
+    init() {
+        UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
+    }
+    
     var body: some View {
-        Text("NYT Bestsellers for Today")
-            .bold()
-            .padding()
-        ScrollView {
-            VStack {
-                BookInfoCard()
+        NavigationView {
+            ScrollView {
+                VStack {
+                    BookInfoCard()
+                }
             }
+            .navigationTitle("NYT Best Sellers for Today")
         }
-
     }
 }
 

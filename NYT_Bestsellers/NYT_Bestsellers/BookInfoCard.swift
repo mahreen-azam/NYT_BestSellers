@@ -15,18 +15,32 @@ struct BookInfoCard: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 300)
                 .cornerRadius(10)
-            // Put these two in a HStack along with another text field with thier data each
-            Text("Book Title: ")
-                .font(.headline)
-            Text("Author Name: ")
-                .font(.headline)
+            HStack {
+                Text("Book Title: ")
+                    .font(.headline)
+                Text("Title Value")
+                    .font(.subheadline)
+            }
+            HStack {
+                Text("Author: ")
+                    .font(.headline)
+                Text("Author Value")
+                    .font(.subheadline)
+            }
+            HStack {
+                NavigationLink(destination: BookDetailView()) {
+                    Text("Tap here to see more")
+                        .font(.caption)
+                        .foregroundColor(Color.blue)
+                }
+            }
             Spacer()
-        }
+        }.padding()
     }
 }
 
 struct BookInfoCard_Previews: PreviewProvider {
     static var previews: some View {
-        BookInfoCard().previewLayout(.fixed(width: 300, height: 500))
+        BookInfoCard()
     }
 }
