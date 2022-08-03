@@ -13,13 +13,11 @@ struct BestSellersView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                VStack {
-                    BookInfoCard()
-                }
-            }
-            .navigationTitle("NYT Best Sellers for Today")
+        NavigationView{
+            List {
+                BookInfoCard()
+                BookInfoCard()
+            }.navigationTitle("NYT Best Sellers for Today")
         }
     }
 }

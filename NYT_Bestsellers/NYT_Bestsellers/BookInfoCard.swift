@@ -9,33 +9,37 @@ import SwiftUI
 
 struct BookInfoCard: View {
     var body: some View {
-        VStack {
-            Image("TSwift-Speak-Now")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 300, height: 300)
-                .cornerRadius(10)
-            HStack {
-                Text("Book Title: ")
-                    .font(.headline)
-                Text("Title Value")
-                    .font(.subheadline)
-            }
-            HStack {
-                Text("Author: ")
-                    .font(.headline)
-                Text("Author Value")
-                    .font(.subheadline)
-            }
-            HStack {
-                NavigationLink(destination: BookDetailView()) {
-                    Text("Tap here to see more")
-                        .font(.caption)
-                        .foregroundColor(Color.blue)
+        NavigationLink(destination: BookDetailView()) {
+            VStack {
+                Image("TSwift-Speak-Now")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 300, height: 300)
+                    .cornerRadius(10)
+                HStack {
+                    Text("Book Title: ")
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    Text("Title Value")
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.black)
                 }
-            }
-            Spacer()
-        }.padding()
+                HStack {
+                    Text("Author: ")
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    Text("Author Value")
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.black).fontWeight(.medium)
+                        .foregroundColor(.black)
+                }
+                Spacer()
+            }.padding()
+        }
     }
 }
 
