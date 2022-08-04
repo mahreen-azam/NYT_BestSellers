@@ -25,7 +25,7 @@ struct BookInfoCard: View {
                         .font(.subheadline)
                         .fontWeight(.medium)
                         .foregroundColor(.black)
-                }
+                }.frame(width: 300)
                 HStack {
                     Text("Author: ")
                         .font(.headline)
@@ -36,7 +36,7 @@ struct BookInfoCard: View {
                         .fontWeight(.medium)
                         .foregroundColor(.black).fontWeight(.medium)
                         .foregroundColor(.black)
-                }
+                }.frame(width: 300)
                 Spacer()
             }.padding()
         }

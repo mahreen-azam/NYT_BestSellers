@@ -13,7 +13,7 @@ struct BestSellersView: View {
     }
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             List {
                 BookInfoCard()
                 BookInfoCard()
